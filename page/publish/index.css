@@ -7,6 +7,12 @@ html, body{
   display: flex;
 }
 
+@media screen and (max-width: 768px) {
+  .wrap {
+    flex-direction: column;
+  }
+}
+
 /* 提示框 */
 .alert{
   width: 400px;
@@ -19,6 +25,13 @@ html, body{
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
+
+@media screen and (max-width: 768px) {
+  .alert {
+    width: 90%;
+    top: 30px;
+  }
+}
 .show{
   display: block;
 }
@@ -30,6 +43,14 @@ html, body{
   background-image: linear-gradient(to bottom, #3a7bd5, #2c5fb9);
   padding-top: 40px;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .aside {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 .aside h2 {
   text-align: center;
@@ -50,6 +71,20 @@ html, body{
   color: white;
   cursor: pointer;
   list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .nav li {
+    width: auto;
+    height: 50px;
+    line-height: 50px;
+  }
 }
 .nav li a{
   color: white;
@@ -81,6 +116,12 @@ html, body{
   background-color: #f5f7fa;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+@media screen and (max-width: 768px) {
+  .main {
+    width: 100%;
+  }
+}
 .top-nav{
   height: 60px;
   border-bottom: 1px solid #eaeaea;
@@ -101,6 +142,12 @@ html, body{
 /* 卡片容器布局 */
 .content{
   padding: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    padding: 15px;
+  }
 }
 /* 卡片 */
 .card{
@@ -150,6 +197,19 @@ html, body{
   width: 200px;
   height: 200px;
 }
+
+@media screen and (max-width: 768px) {
+  .cover .place {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    font-size: 30px;
+  }
+  .cover img {
+    width: 150px;
+    height: 150px;
+  }
+}
 .cover .rounded{
   display: none;
 }
@@ -167,3 +227,11 @@ html, body{
 }
 #toolbar-container { border-bottom: 1px solid #ccc; }
 #editor-container { height: 500px; }
+
+@media screen and (max-width: 768px) {
+  #editor-container { height: 300px; }
+  #toolbar-container {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

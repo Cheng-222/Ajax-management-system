@@ -6,6 +6,12 @@ html, body{
   display: flex;
 }
 
+@media screen and (max-width: 768px) {
+  .wrap {
+    flex-direction: column;
+  }
+}
+
 /* 侧边栏 */
 .aside {
   width: 200px;
@@ -13,6 +19,14 @@ html, body{
   background-image: linear-gradient(to bottom, #3a7bd5, #2c5fb9);
   padding-top: 40px;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .aside {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 .aside h2 {
   text-align: center;
@@ -33,6 +47,20 @@ html, body{
   color: white;
   cursor: pointer;
   list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .nav li {
+    width: auto;
+    height: 50px;
+    line-height: 50px;
+  }
 }
 .nav li a{
   color: white;
@@ -60,6 +88,12 @@ html, body{
   background-color: #f5f7fa;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+@media screen and (max-width: 768px) {
+  .main {
+    width: 100%;
+  }
+}
 .top-nav{
   height: 60px;
   border-bottom: 1px solid #eaeaea;
@@ -80,6 +114,12 @@ html, body{
 /* 卡片容器布局 */
 .content{
   padding: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    padding: 15px;
+  }
 }
 .card{
   box-shadow: 0 2px 12px 0 rgba(0,0,0,.05);
@@ -122,6 +162,18 @@ html, body{
 }
 .table .bi{
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .table img {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 /* 分页 */

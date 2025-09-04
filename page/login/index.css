@@ -19,6 +19,13 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
+
+@media screen and (max-width: 480px) {
+  .alert {
+    width: 90%;
+    top: 30px;
+  }
+}
 .show{
   display: block !important;
 }
@@ -31,12 +38,26 @@ body {
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
+
+@media screen and (max-width: 480px) {
+  .login-wrap {
+    width: 90%;
+    padding: 20px;
+    margin: 0 15px;
+  }
+}
 .login-wrap .title{
   font-size: 28px;
   text-align: center;
   color: #3a7bd5;
   margin-bottom: 10px;
   font-weight: 600;
+}
+
+@media screen and (max-width: 480px) {
+  .login-wrap .title {
+    font-size: 24px;
+  }
 }
 .login-wrap .login-form {
   margin-top: 20px;
